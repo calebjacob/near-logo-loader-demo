@@ -1,4 +1,4 @@
-@keyframes dash {
+@keyframes outline {
   0% {
     stroke-dashoffset: 1100;
     stroke-width: 0;
@@ -17,7 +17,7 @@
   }
 }
 
-@keyframes fill {
+@keyframes pulse {
   0% {
     transform: scale(0, 0);
     opacity: 0;
@@ -50,7 +50,7 @@
   stroke-dashoffset: 1100;
   stroke-linecap: round;
   transform-origin: center center;
-  animation: dash 2s infinite;
+  animation: outline 2s infinite;
 }
 
 .nearLogoLoader svg circle {
@@ -58,5 +58,5 @@
   stroke: currentColor;
   stroke-width: 0;
   transform-origin: center center;
-  animation: fill 2s infinite;
+  animation: pulse 2s infinite;
 }
